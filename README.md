@@ -20,7 +20,7 @@ Para executar o projeto em sua máquina local, siga os passos abaixo.
 
 **1. Clone o repositório**
 ```bash
-git clone [https://github.com/omatheusfaria/ads-script.git](https://github.com/omatheusfaria/ads-script.git)
+git clone https://github.com/omatheusfaria/ads-script.git
 ```
 
 **2. Acesse a pasta do projeto**
