@@ -40,5 +40,6 @@ npm run dev
 Abra seu navegador e acesse o localhost
 
 👨‍💻 Autor
+
 Desenvolvido por Matheus Faria.
 ---
