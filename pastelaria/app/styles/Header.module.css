@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'TallyText';
+    src: url('/fonts/TallyTextBold1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.header {
+    width: 100%;
+    background: linear-gradient(135deg, #ffd54f 0%, #ffca28 100%); /* Fundo amarelo */
+    border: 5px solid #ff9800; /* Borda laranja */
+    border-radius: 30px;
+    padding: 8px; /* Espaço para mostrar o fundo amarelo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Container interno (fundo bege + borda azul clara) */
+.headerInner {
+    width: 100%;
+    background: linear-gradient(135deg, #f5f5dc 0%, #ede7d3 100%); /* Fundo bege */
+    border: 5px solid #87ceeb; /* Borda azul clara */
+    border-radius: 25px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+.titulo {
+    color: #696969; /* Cinza escuro igual à referência */
+    font-size: 4.5rem;
+    font-weight: 400; /* Peso normal, não bold */
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    font-family: 'TallyText', cursive; /* Fonte mais próxima da referência */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    .header {
+        padding: 6px;
+        border-radius: 25px;
+        border-width: 4px;
+    }
+
+    .headerInner {
+        padding: 18px 25px;
+        border-radius: 20px;
+        border-width: 4px;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .header {
+        padding: 5px;
+        border-radius: 20px;
+        border-width: 3px;
+    }
+
+    .headerInner {
+        padding: 15px 20px;
+        border-radius: 18px;
+        border-width: 3px;
+    }
+
+    .titulo {
+        font-size: 40px;
+        letter-spacing: 0.3px;
+    }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 350px) {
+    .header {
+        padding: 4px;
+        border-radius: 18px;
+    }
+
+    .headerInner {
+        padding: 12px 15px;
+        border-radius: 15px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        letter-spacing: 0.2px;
+    }
+}
+
+/* Hover effect para interatividade */
+.header:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
